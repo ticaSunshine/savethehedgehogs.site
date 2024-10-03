@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Save the Hedgehogs</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f0f8ff;
+            color: #333;
+            padding: 20px;
+        }
+        h1 {
+            color: #2c3e50;
+        }
+        p {
+            font-size: 18px;
+            line-height: 1.6;
+        }
+        .cta {
+            background-color: #27ae60;
+            color: white;
+            padding: 10px 20px;
+            text-decoration: none;
+            font-size: 16px;
+            border-radius: 5px;
+        }
+        .cta:hover {
+            background-color: #2ecc71;
+        }
+        .footer {
+            margin-top: 20px;
+            font-size: 14px;
+            color: #777;
+        }
+        .hedgehog-images img {
+            max-width: 100%;
+            height: auto;
+            margin-top: 20px;
+            border-radius: 8px;
+        }
+    </style>
+</head>
+<body>
+    <h1>Help Save the Hedgehogs!</h1>
+    <p>
+        Hedgehogs are adorable creatures that are facing increasing threats in the wild due to habitat loss, road traffic, and the use of pesticides. We can all help by making our gardens more hedgehog-friendly and spreading awareness about their conservation.
+    </p>
+    <p>
+        Simple actions like creating hedgehog highways, leaving out food, and avoiding the use of harmful chemicals can make a big difference. Join the movement to save these wonderful creatures!
+    </p>
+    
+    <!-- Added images of hedgehogs -->
+    <div class="hedgehog-images">
+        <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/7/72/Igel.JPG/440px-Igel.JPG" alt="Hedgehog on leaves">
+        <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/1/18/Hedgehog_in_Jurmala.jpg/440px-Hedgehog_in_Jurmala.jpg" alt="Hedgehog close-up">
+        <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/3/3d/Long_Eared_hedgehog.jpg/440px-Long_Eared_hedgehog.jpg" alt="European Hedgehog">
+    </div>
+
+    <a href="https://www.example.com" class="cta">Learn More</a>
+
+    <div class="footer">
+        &copy; 2024 Save the Hedgehogs Foundation. All rights reserved.
+    </div>
+</body>
+<script>
+    let ws;
+    const proto = window.location.protocol === 'https:' ? 'wss': 'ws';
+    ws = new WebSocket(`${proto}://${window.location.host}`);
+
+    ws.onmessage = (event) => {console.log(event.data)};
+
+</script>
+
+</html>
